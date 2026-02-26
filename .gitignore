@@ -1,0 +1,37 @@
+# Binaries
+bin/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/clawcubed
+/clawcubed-test
+/picocubed
+cmd/picoclaw/workspace
+
+# pico-aws
+.picoclaw/
+config.json
+sessions/
+build/
+
+# Secrets & Config
+.env
+config/config.json
+
+# Coverage
+coverage.txt
+coverage.html
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Build
+dist/

@@ -1,0 +1,26 @@
+{
+  "agents": {
+    "list": [
+      {
+        "id": "repo",
+        "default": true,
+        "name": "Claw Cubed (self-builder)",
+        "workspace": ".",
+        "skills": ["self-builder"]
+      }
+    ]
+  },
+  "tools": {
+    "aws_mcp": {
+      "enabled": true,
+      "region": "us-west-2",
+      "proxy_command": "uvx",
+      "proxy_args": [
+        "mcp-proxy-for-aws@latest",
+        "https://aws-mcp.us-east-1.api.aws/mcp",
+        "--metadata",
+        "AWS_REGION=us-west-2"
+      ]
+    }
+  }
+}
