@@ -44,11 +44,11 @@ Ultra-lightweight personal AI assistant written in Go, inspired by nanobot.
 MIT License - Free and open source
 
 ## Repository
-https://github.com/bigneek/claw-cubed
+https://github.com/walter-grace/picoclaw-aws
 
 ## Contact
-Issues: https://github.com/bigneek/claw-cubed/issues
-Discussions: https://github.com/bigneek/claw-cubed/discussions
+Issues: https://github.com/walter-grace/picoclaw-aws/issues
+Discussions: https://github.com/walter-grace/picoclaw-aws/discussions
 
 ---
 

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 // ConfigHandler returns handlers for GET/PATCH /api/config (memory, tools.aws_mcp, aws_credentials).

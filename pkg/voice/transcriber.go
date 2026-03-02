@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/utils"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/utils"
 )
 
 type GroqTranscriber struct {

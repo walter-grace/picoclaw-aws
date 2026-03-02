@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/providers"
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 func TestRecordLastChannel(t *testing.T) {

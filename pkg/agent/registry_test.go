@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
 )
 
 type mockRegistryProvider struct{}

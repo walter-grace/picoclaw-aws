@@ -116,12 +116,12 @@ https://private-user-images.githubusercontent.com/83055338/547056448-e7b031ff-d6
 
 ### Cài đặt bằng binary biên dịch sẵn
 
-Tải file binary cho nền tảng của bạn từ [trang Release](https://github.com/bigneek/claw-cubed/releases).
+Tải file binary cho nền tảng của bạn từ [trang Release](https://github.com/walter-grace/picoclaw-aws/releases).
 
 ### Cài đặt từ mã nguồn (có tính năng mới nhất, khuyên dùng cho phát triển)
 
 ```bash
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 
 cd picoclaw
 make deps
@@ -142,7 +142,7 @@ Bạn cũng có thể chạy PicoClaw bằng Docker Compose mà không cần cà
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 cd picoclaw
 
 # 2. Thiết lập API Key

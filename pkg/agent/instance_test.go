@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 func TestNewAgentInstance_UsesDefaultsTemperatureAndMaxTokens(t *testing.T) {

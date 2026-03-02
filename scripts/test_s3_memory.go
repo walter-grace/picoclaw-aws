@@ -1,12 +1,12 @@
 //go:build ignore
 // +build ignore
 
-// Test S3 memory connectivity for Claw Cubed.
+// Test S3 memory connectivity for pico-aws.
 // Run: go run scripts/test_s3_memory.go
-// Or: cd claw-cubed && go run ./scripts/test_s3_memory.go
+// Or: cd picoclaw-aws && go run ./scripts/test_s3_memory.go
 //
 // Requires the gateway to be running for the agent memory check.
-// Start with: ./clawcubed gateway
+// Start with: ./pico-aws gateway
 
 package main
 
@@ -21,8 +21,8 @@ import (
 	"time"
 
 	"github.com/joho/godotenv"
-	"github.com/bigneek/claw-cubed/pkg/agent"
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/agent"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 	memCfg := &cfg.Memory
 	workspace := cfg.WorkspacePath()
 
-	fmt.Println("🧊 Claw Cubed S3 Memory Test")
+	fmt.Println("🧊 pico-aws S3 Memory Test")
 	fmt.Println("============================")
 	fmt.Printf("Config: %s\n", configPath)
 	fmt.Printf("Workspace: %s\n", workspace)
@@ -127,7 +127,7 @@ func main() {
 	// Check gateway health
 	resp, err := client.Get(gatewayURL + "/health")
 	if err != nil || resp.StatusCode != 200 {
-		fmt.Printf("⚠️  Gateway not reachable at %s (start with: ./clawcubed gateway)\n", gatewayURL)
+		fmt.Printf("⚠️  Gateway not reachable at %s (start with: ./pico-aws gateway)\n", gatewayURL)
 		fmt.Println("   Skipping agent memory check. S3 store tests passed.")
 		fmt.Println()
 		fmt.Println("✅ S3 memory store tests passed.")
@@ -179,7 +179,7 @@ func main() {
 	}
 
 	// Positive: agent confirms S3
-	positivePhrases := []string{"s3 bucket", "stored in s3", "memory in s3", "cloud-backed", "claw cubed", "aws bucket"}
+	positivePhrases := []string{"s3 bucket", "stored in s3", "memory in s3", "cloud-backed", "pico-aws", "aws bucket"}
 	found := false
 	for _, phrase := range positivePhrases {
 		if strings.Contains(agentContent, phrase) {

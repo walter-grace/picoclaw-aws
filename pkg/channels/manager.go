@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/constants"
-	"github.com/bigneek/claw-cubed/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/constants"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
 )
 
 type Manager struct {

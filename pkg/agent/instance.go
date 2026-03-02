@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/providers"
-	"github.com/bigneek/claw-cubed/pkg/routing"
-	"github.com/bigneek/claw-cubed/pkg/session"
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/routing"
+	"github.com/walter-grace/picoclaw-aws/pkg/session"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 // AgentInstance represents a fully configured agent with its own workspace,

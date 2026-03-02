@@ -7,9 +7,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
 )
 
 type MaixCamChannel struct {

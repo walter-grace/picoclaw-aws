@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 const runCodeTimeout = 30 * time.Second

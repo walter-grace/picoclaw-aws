@@ -110,7 +110,7 @@ Dê uma segunda vida ao seu celular de dez anos atrás! Transforme-o em um assis
 
 ```bash
 # Nota: Substitua v0.1.1 pela versao mais recente da pagina de Releases
-wget https://github.com/bigneek/claw-cubed/releases/download/v0.1.1/picoclaw-linux-arm64
+wget https://github.com/walter-grace/picoclaw-aws/releases/download/v0.1.1/picoclaw-linux-arm64
 chmod +x picoclaw-linux-arm64
 pkg install proot
 termux-chroot ./picoclaw-linux-arm64 onboard
@@ -136,12 +136,12 @@ https://private-user-images.githubusercontent.com/83055338/547056448-e7b031ff-d6
 
 ### Instalar com binário pré-compilado
 
-Baixe o binário para sua plataforma na página de [releases](https://github.com/bigneek/claw-cubed/releases).
+Baixe o binário para sua plataforma na página de [releases](https://github.com/walter-grace/picoclaw-aws/releases).
 
 ### Instalar a partir do código-fonte (funcionalidades mais recentes, recomendado para desenvolvimento)
 
 ```bash
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 
 cd picoclaw
 make deps
@@ -162,7 +162,7 @@ Você tambêm pode rodar o PicoClaw usando Docker Compose sem instalar nada loca
 
 ```bash
 # 1. Clone este repositorio
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 cd picoclaw
 
 # 2. Configure suas API keys

@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bigneek/claw-cubed/pkg/auth"
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/auth"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 func TestResolveProviderSelection(t *testing.T) {

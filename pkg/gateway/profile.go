@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/agent"
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/agent"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 const memoryPreviewMaxLen = 500

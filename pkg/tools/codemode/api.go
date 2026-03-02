@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 const awsToolPrefix = "aws__"

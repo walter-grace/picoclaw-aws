@@ -11,9 +11,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/providers"
-	"github.com/bigneek/claw-cubed/pkg/utils"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/utils"
 )
 
 // ToolLoopConfig configures the tool execution loop.

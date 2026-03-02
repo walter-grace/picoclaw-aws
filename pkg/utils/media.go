@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/bigneek/claw-cubed/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
 )
 
 // IsAudioFile checks if a file is an audio file based on its filename extension and content type.

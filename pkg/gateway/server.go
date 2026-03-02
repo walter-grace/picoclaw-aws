@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/agent"
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/health"
+	"github.com/walter-grace/picoclaw-aws/pkg/agent"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/health"
 )
 
 // NewServer creates an HTTP server with health checks, chat API, and config API.

@@ -1,10 +1,10 @@
-# Claw Cubed
+# pico-aws
 
 A lightweight, memory-intensive AI agent built on [PicoClaw](https://github.com/sipeed/picoclaw), with **AWS S3 as the backend for agent memory**.
 
-## What is Claw Cubed?
+## What is pico-aws?
 
-Claw Cubed is a variant of PicoClaw where agent memory lives in S3 instead of the local filesystem. You get:
+pico-aws is a variant of PicoClaw where agent memory lives in S3 instead of the local filesystem. You get:
 
 - **Durable memory** – survives device loss, survives redeploys
 - **Shared memory** – multiple instances can share the same memory (serverless, multi-node)
@@ -16,7 +16,7 @@ Claw Cubed is a variant of PicoClaw where agent memory lives in S3 instead of th
 ### 1. Build
 
 ```bash
-go build -o clawcubed ./cmd/picoclaw
+go build -o pico-aws ./cmd/picoclaw
 ```
 
 ### 2. Configure S3 Memory
@@ -26,7 +26,7 @@ Set these in your config or environment:
 ```bash
 # Memory backend: "filesystem" (default) or "s3"
 PICOCLAW_MEMORY_BACKEND=s3
-PICOCLAW_MEMORY_S3_BUCKET=my-clawcubed-memory
+PICOCLAW_MEMORY_S3_BUCKET=my-pico-aws-memory
 PICOCLAW_MEMORY_S3_PREFIX=          # optional, e.g. "prod/" for multi-env
 PICOCLAW_MEMORY_S3_REGION=us-east-1 # optional, uses AWS_REGION if empty
 ```
@@ -56,8 +56,8 @@ With a prefix (e.g. `prod/`): `prod/memory/MEMORY.md`, `prod/memory/202502/20250
 Same as PicoClaw:
 
 ```bash
-./clawcubed agent    # CLI chat
-./clawcubed gateway # HTTP gateway
+./pico-aws agent    # CLI chat
+./pico-aws gateway  # HTTP gateway
 # etc.
 ```
 
@@ -70,7 +70,7 @@ In `~/.picoclaw/config.json` or via env:
   "memory": {
     "backend": "s3",
     "s3": {
-      "bucket": "my-clawcubed-memory",
+      "bucket": "my-pico-aws-memory",
       "prefix": "",
       "region": "us-east-1"
     }

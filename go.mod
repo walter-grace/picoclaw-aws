@@ -1,4 +1,4 @@
-module github.com/bigneek/claw-cubed
+module github.com/walter-grace/picoclaw-aws
 
 go 1.25.7
 

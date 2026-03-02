@@ -1,6 +1,6 @@
 #!/bin/bash
-# Test S3 memory connectivity for Claw Cubed.
-# Run from claw-cubed directory: ./scripts/test_s3_memory.sh
+# Test S3 memory connectivity for pico-aws.
+# Run from picoclaw-aws directory: ./scripts/test_s3_memory.sh
 
 set -e
 cd "$(dirname "$0")/.."

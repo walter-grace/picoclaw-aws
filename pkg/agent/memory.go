@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 // FilesystemMemoryStore manages persistent memory on the local filesystem.

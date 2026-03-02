@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/bigneek/claw-cubed/pkg/providers/protocoltypes"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers/protocoltypes"
 )
 
 type ToolCall = protocoltypes.ToolCall

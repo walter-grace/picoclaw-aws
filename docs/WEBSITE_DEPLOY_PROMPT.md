@@ -1,4 +1,4 @@
-# Prompt: Build a Website for Deploying Claw Cubed on AWS
+# Prompt: Build a Website for Deploying pico-aws on AWS
 
 Use this prompt with an AI coding assistant (e.g., Cursor, Claude, GPT) to build the deployment website.
 
@@ -7,13 +7,13 @@ Use this prompt with an AI coding assistant (e.g., Cursor, Claude, GPT) to build
 ## The Prompt
 
 ```
-Build a website that lets users deploy their own Claw Cubed instance on AWS with one click.
+Build a website that lets users deploy their own pico-aws instance on AWS with one click.
 
 ### Requirements
 
 1. **Landing page**
    - Hero section: "Deploy your own AI agent in minutes"
-   - Short description of Claw Cubed (lightweight agent, S3 memory, cloud-native)
+   - Short description of pico-aws (lightweight agent, S3 memory, cloud-native)
    - Clear CTA: "Deploy to AWS" button
 
 2. **Deploy flow**
@@ -48,7 +48,7 @@ Build a website that lets users deploy their own Claw Cubed instance on AWS with
 
 - CloudFormation or SAM template that:
   - Creates S3 bucket for memory
-  - Creates Lambda (or ECS) with Claw Cubed container
+  - Creates Lambda (or ECS) with pico-aws container
   - Creates API Gateway
   - Creates IAM role
   - Creates Secrets Manager secret (empty, user fills via console)
@@ -57,7 +57,7 @@ Build a website that lets users deploy their own Claw Cubed instance on AWS with
 ### Deliverables
 
 1. Landing page + deploy flow (frontend)
-2. CloudFormation/SAM template for Claw Cubed
+2. CloudFormation/SAM template for pico-aws
 3. README with: how to run locally, how to deploy the website itself, how the "Deploy to AWS" flow works
 ```
 
@@ -68,11 +68,11 @@ Build a website that lets users deploy their own Claw Cubed instance on AWS with
 If you want a **static site only** (no server, no AWS SDK in the browser):
 
 ```
-Build a static landing page for Claw Cubed with:
+Build a static landing page for pico-aws with:
 
-1. Hero: "Deploy your own Claw Cubed on AWS"
+1. Hero: "Deploy your own pico-aws on AWS"
 2. "Deploy to AWS" button that opens:
-   https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=clawcubed&templateURL=https://...template.json
+   https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=pico-aws&templateURL=https://...template.json
 
 3. A short form (client-side only) that builds the CloudFormation parameter URL:
    - User enters: API key, region, bucket name
@@ -90,4 +90,4 @@ Build a static landing page for Claw Cubed with:
 
 - **CloudFormation template** – Create this first (or use the AWS one-pager as a spec)
 - **S3/CloudFront URL** for the template if hosting it yourself
-- **Repo structure** – e.g. `website/` folder in claw-cubed for the landing page
+- **Repo structure** – e.g. `website/` folder in picoclaw-aws for the landing page

@@ -3,7 +3,7 @@ package agent
 import (
 	"context"
 
-	"github.com/bigneek/claw-cubed/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
 )
 
 type mockProvider struct{}

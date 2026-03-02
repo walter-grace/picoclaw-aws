@@ -1,5 +1,5 @@
 package devices
 
-import "github.com/bigneek/claw-cubed/pkg/devices/events"
+import "github.com/walter-grace/picoclaw-aws/pkg/devices/events"
 
 type EventSource = events.EventSource

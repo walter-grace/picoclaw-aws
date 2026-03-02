@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 // --- Compile-time interface check ---

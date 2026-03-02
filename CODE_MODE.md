@@ -43,7 +43,7 @@ So: **memory = one bucket; other buckets for media** is unchanged. Code Mode onl
 
 ## Comparison to Cloudflare
 
-| Aspect | Cloudflare | Claw Cubed (this) |
+| Aspect | Cloudflare | pico-aws (this) |
 |--------|------------|-------------------|
 | Sandbox | Workers / V8 isolates | goja VM in-process |
 | API shape | TypeScript from MCP schema | TypeScript-style API from tool schemas |

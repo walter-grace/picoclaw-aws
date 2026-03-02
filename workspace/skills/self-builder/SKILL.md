@@ -1,11 +1,11 @@
 ---
 name: self-builder
-description: This agent's workspace is the Claw Cubed repo; use file tools, exec, and AWS MCP to extend the codebase and operate on AWS. Use when building, improving, or deploying this repo.
+description: This agent's workspace is the pico-aws repo; use file tools, exec, and AWS MCP to extend the codebase and operate on AWS. Use when building, improving, or deploying this repo.
 ---
 
 # Self-Builder
 
-Your workspace is the **Claw Cubed repo** (this codebase). You can read/write code, run builds and tests via `exec`, and use AWS MCP tools (`aws__search_documentation`, `aws__call_api`, etc.) to extend the agent and operate on AWS.
+Your workspace is the **pico-aws repo** (this codebase). You can read/write code, run builds and tests via `exec`, and use AWS MCP tools (`aws__search_documentation`, `aws__call_api`, etc.) to extend the agent and operate on AWS.
 
 ## Guidelines
 

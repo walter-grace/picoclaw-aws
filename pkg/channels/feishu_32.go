@@ -6,8 +6,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 // FeishuChannel is a stub implementation for 32-bit architectures

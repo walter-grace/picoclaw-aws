@@ -3,10 +3,10 @@ package agent
 import (
 	"sync"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/providers"
-	"github.com/bigneek/claw-cubed/pkg/routing"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/routing"
 )
 
 // AgentRegistry manages multiple agent instances and routes messages to them.

@@ -3,7 +3,7 @@ package routing
 import (
 	"strings"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
 )
 
 // RouteInput contains the routing context from an inbound message.

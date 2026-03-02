@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 func TestExecuteHeartbeat_Async(t *testing.T) {

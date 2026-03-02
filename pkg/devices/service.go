@@ -5,12 +5,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/constants"
-	"github.com/bigneek/claw-cubed/pkg/devices/events"
-	"github.com/bigneek/claw-cubed/pkg/devices/sources"
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/state"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/constants"
+	"github.com/walter-grace/picoclaw-aws/pkg/devices/events"
+	"github.com/walter-grace/picoclaw-aws/pkg/devices/sources"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/state"
 )
 
 type Service struct {

@@ -1,4 +1,4 @@
-# Claw Cubed on AWS: Deployment One-Pager
+# pico-aws on AWS: Deployment One-Pager
 
 ## Architecture Overview
 
@@ -14,7 +14,7 @@
                                     │
                                     ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Lambda (Claw Cubed runtime)                    │
+│                    Lambda (pico-aws runtime)                    │
 │              or ECS Fargate / App Runner (long-lived)             │
 └─────────────────────────────────────────────────────────────────┘
                                     │
@@ -33,12 +33,12 @@
 | Service | Purpose |
 |---------|---------|
 | **S3** | Memory backend (`MEMORY.md`, daily notes). One bucket per deployment or per tenant. |
-| **Lambda** | Run Claw Cubed as serverless (stateless handler, memory in S3). |
+| **Lambda** | Run pico-aws as serverless (stateless handler, memory in S3). |
 | **ECS Fargate** or **App Runner** | Run as long-lived container if you need WebSockets or persistent connections. |
 | **API Gateway** | HTTP API for REST, or WebSocket API for real-time chat. |
 | **Secrets Manager** | Store LLM API keys, Telegram/Discord tokens, AWS credentials. |
 | **IAM** | Roles for Lambda/ECS to access S3, Secrets Manager, Bedrock. |
-| **ECR** | Store Docker image of Claw Cubed. |
+| **ECR** | Store Docker image of pico-aws. |
 | **CloudWatch** | Logs and metrics. |
 
 ---
@@ -47,7 +47,7 @@
 
 ### Option A: Lambda + API Gateway (Serverless)
 
-1. Build Claw Cubed as a Go binary or container.
+1. Build pico-aws as a Go binary or container.
 2. Package as Lambda (custom runtime or container image).
 3. Create HTTP API or WebSocket API in API Gateway.
 4. Lambda reads/writes memory in S3; no local disk.
@@ -55,7 +55,7 @@
 
 ### Option B: ECS Fargate or App Runner (Container)
 
-1. Dockerize Claw Cubed.
+1. Dockerize pico-aws.
 2. Push image to ECR.
 3. Deploy to ECS Fargate or App Runner.
 4. Expose via ALB or App Runner URL.
@@ -64,7 +64,7 @@
 ### Option C: EC2 / Lightsail (Single Instance)
 
 1. Launch a small instance (t3.micro, Lightsail $5).
-2. Run Claw Cubed binary, systemd service.
+2. Run pico-aws binary, systemd service.
 3. S3 for memory; local for sessions if desired.
 4. **Pros:** Simple, predictable. **Cons:** Single point of failure.
 
@@ -73,7 +73,7 @@
 ## S3 Bucket Setup
 
 ```
-Bucket: clawcubed-memory-{account-id}
+Bucket: pico-aws-memory-{account-id}
 ├── memory/
 │   ├── MEMORY.md
 │   └── YYYYMM/
@@ -87,8 +87,8 @@ Bucket: clawcubed-memory-{account-id}
   "Effect": "Allow",
   "Action": ["s3:GetObject", "s3:PutObject", "s3:ListBucket"],
   "Resource": [
-    "arn:aws:s3:::clawcubed-memory-*",
-    "arn:aws:s3:::clawcubed-memory-*/*"
+    "arn:aws:s3:::pico-aws-memory-*",
+    "arn:aws:s3:::pico-aws-memory-*/*"
   ]
 }
 ```
@@ -112,7 +112,7 @@ Bucket: clawcubed-memory-{account-id}
 Provide a **Launch Stack** button that deploys:
 
 1. S3 bucket for memory
-2. Lambda function (or ECS task) with Claw Cubed
+2. Lambda function (or ECS task) with pico-aws
 3. API Gateway
 4. IAM roles
 5. Secrets Manager placeholder for API keys

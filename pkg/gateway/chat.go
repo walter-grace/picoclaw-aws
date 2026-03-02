@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/bigneek/claw-cubed/pkg/agent"
+	"github.com/walter-grace/picoclaw-aws/pkg/agent"
 )
 
 // ChatHandler provides an HTTP API for chat compatible with Vercel AI SDK useChat.

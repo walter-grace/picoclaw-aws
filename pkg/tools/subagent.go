@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/bus"
-	"github.com/bigneek/claw-cubed/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/bus"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
 )
 
 type SubagentTask struct {

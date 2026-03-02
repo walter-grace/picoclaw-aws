@@ -97,12 +97,12 @@ https://private-user-images.githubusercontent.com/83055338/547056448-e7b031ff-d6
 
 ### コンパイル済みバイナリでインストール
 
-[リリースページ](https://github.com/bigneek/claw-cubed/releases) からお使いのプラットフォーム用のファームウェアをダウンロードしてください。
+[リリースページ](https://github.com/walter-grace/picoclaw-aws/releases) からお使いのプラットフォーム用のファームウェアをダウンロードしてください。
 
 ### ソースからインストール（最新機能、開発向け推奨）
 
 ```bash
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 
 cd picoclaw
 make deps
@@ -123,7 +123,7 @@ Docker Compose を使えば、ローカルにインストールせずに PicoCla
 
 ```bash
 # 1. リポジトリをクローン
-git clone https://github.com/bigneek/claw-cubed.git
+git clone https://github.com/walter-grace/picoclaw-aws.git
 cd picoclaw
 
 # 2. API キーを設定

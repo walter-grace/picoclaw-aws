@@ -4,7 +4,7 @@
       {
         "id": "repo",
         "default": true,
-        "name": "Claw Cubed (self-builder)",
+        "name": "pico-aws (self-builder)",
         "workspace": ".",
         "skills": ["self-builder"]
       }

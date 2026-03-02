@@ -1,4 +1,4 @@
-# 🧊 CLAW CUBED — 15 Second Spot
+# 🧊 pico-aws — 15 Second Spot
 
 *[Synth bass drops. Fog machine. Laser grid. Jacked Jeff Bezos smashes through a foam wall in a torn neon headband and acid-wash jeans. He's oiled up and backlit.]*
 
@@ -9,7 +9,7 @@
 
 *[Power slide across stage. Sparks fly.]*
 
-"But CLAW CUBED remembers, baby — S3 in its HEART —"
+"But pico-aws remembers, baby — S3 in its HEART —"
 
 *[Rips shirt off. An AWS logo is airbrushed on his chest. A keytar player appears from nowhere.]*
 
@@ -17,6 +17,6 @@
 
 *[Freeze frame. He's mid-jump, doing the splits. Text slams on screen:]*
 
-> **CLAW CUBED. MEMORY THAT NEVER DIES. AGENTS THAT NEVER SKIP LEG DAY.** 🧊
+> **pico-aws. MEMORY THAT NEVER DIES. AGENTS THAT NEVER SKIP LEG DAY.** 🧊
 
-*[1-800-CLAWCUBED flashes at the bottom. Call now and get a free sleeveless polo.]*
+*[1-800-PICO-AWS flashes at the bottom. Call now and get a free sleeveless polo.]*

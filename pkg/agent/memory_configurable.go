@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bigneek/claw-cubed/pkg/config"
-	"github.com/bigneek/claw-cubed/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/config"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
 )
 
 // ConfigurableMemoryStore delegates to the appropriate MemoryStore (S3 or filesystem)

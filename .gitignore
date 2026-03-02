@@ -7,8 +7,9 @@ build/
 *.dylib
 *.test
 *.out
+/pico-aws
+/pico-aws-test
 /clawcubed
-/clawcubed-test
 /picocubed
 cmd/picoclaw/workspace
 

@@ -1,8 +1,8 @@
-# Claw Cubed: Direction & Vision
+# pico-aws: Direction & Vision
 
 ## Core Idea
 
-Claw Cubed is **PicoClaw, improved for AWS**. Same tiny agent, but:
+pico-aws is **PicoClaw, improved for AWS**. Same tiny agent, but:
 
 - **S3 is the memory** – No local file. The bucket is the brain.
 - **AWS MCP by default** – The agent can call AWS APIs, search docs, run workflows from day one.
@@ -19,7 +19,7 @@ Claw Cubed is **PicoClaw, improved for AWS**. Same tiny agent, but:
 
 ## Future: Making It More High-Functioning
 
-Ideas to push Claw Cubed further:
+Ideas to push pico-aws further:
 
 1. **Bedrock as LLM provider** – Use Claude on Bedrock. Fully AWS-native, no external API keys.
 2. **RAG over S3** – Index documents in S3, semantic search for context. Memory that scales beyond one file.
@@ -31,6 +31,6 @@ Ideas to push Claw Cubed further:
 ## Positioning
 
 - **PicoClaw** = Tiny agent, local-first, general-purpose.
-- **Claw Cubed** = Tiny agent, AWS-first, scalable, cloud-native.
+- **pico-aws** = Tiny agent, AWS-first, scalable, cloud-native.
 
 Same DNA. Different habitat.

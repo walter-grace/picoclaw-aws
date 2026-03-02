@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bigneek/claw-cubed/pkg/logger"
-	"github.com/bigneek/claw-cubed/pkg/providers"
-	"github.com/bigneek/claw-cubed/pkg/skills"
-	"github.com/bigneek/claw-cubed/pkg/tools"
-	"github.com/bigneek/claw-cubed/pkg/tools/codemode"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/providers"
+	"github.com/walter-grace/picoclaw-aws/pkg/skills"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools"
+	"github.com/walter-grace/picoclaw-aws/pkg/tools/codemode"
 )
 
 type ContextBuilder struct {

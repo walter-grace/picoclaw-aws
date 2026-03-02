@@ -10,8 +10,8 @@ import (
 	"github.com/openai/openai-go/v3"
 	"github.com/openai/openai-go/v3/option"
 	"github.com/openai/openai-go/v3/responses"
-	"github.com/bigneek/claw-cubed/pkg/auth"
-	"github.com/bigneek/claw-cubed/pkg/logger"
+	"github.com/walter-grace/picoclaw-aws/pkg/auth"
+	"github.com/walter-grace/picoclaw-aws/pkg/logger"
 )
 
 const codexDefaultModel = "gpt-5.2"

@@ -1,12 +1,12 @@
-# Claw Cubed Chat UI
+# pico-aws Chat UI
 
-A web chat interface for Claw Cubed, inspired by the [Vercel AI Chatbot](https://github.com/vercel/ai-chatbot) pattern.
+A web chat interface for pico-aws, inspired by the [Vercel AI Chatbot](https://github.com/vercel/ai-chatbot) pattern.
 
 ## Architecture
 
 ```
 ┌─────────────────┐     POST /api/chat      ┌─────────────────┐
-│   Next.js Web   │ ──────────────────────► │  Claw Cubed     │
+│   Next.js Web   │ ──────────────────────► │  pico-aws     │
 │   (port 3000)   │     { messages }        │  Gateway        │
 │                 │ ◄────────────────────── │  (port 18790)   │
 │                 │     { content }         │                 │
@@ -15,17 +15,17 @@ A web chat interface for Claw Cubed, inspired by the [Vercel AI Chatbot](https:/
 
 ## Quick Start
 
-**Terminal 1 – Claw Cubed gateway:**
+**Terminal 1 – pico-aws gateway:**
 
 ```bash
-cd /path/to/claw-cubed
-./clawcubed gateway
+cd /path/to/picoclaw-aws
+./pico-aws gateway
 ```
 
 **Terminal 2 – Web UI:**
 
 ```bash
-cd /path/to/claw-cubed/web
+cd /path/to/picoclaw-aws/web
 npm install
 npm run dev
 ```
@@ -34,7 +34,7 @@ Open [http://localhost:3001](http://localhost:3001).
 
 ## HTTP Chat API
 
-Claw Cubed gateway exposes:
+pico-aws gateway exposes:
 
 - `POST /api/chat` – JSON body `{ messages: [{ role, content }] }`, returns `{ content }`
 - `POST /api/chat/stream` – SSE stream (for future streaming UI)
@@ -45,4 +45,4 @@ To use the full [Vercel ai-chatbot](https://github.com/vercel/ai-chatbot) templa
 
 1. Clone: `npx degit vercel/ai-chatbot web-full`
 2. Add an API route that proxies to `http://localhost:18790/api/chat`
-3. Or add a custom transport that calls the Claw Cubed backend
+3. Or add a custom transport that calls the pico-aws backend

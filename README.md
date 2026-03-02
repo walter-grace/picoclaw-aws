@@ -1,11 +1,11 @@
-# Claw Cubed
+# pico-aws
 
 **The AWS-native tiny agent.** An improved variant of [PicoClaw](https://github.com/sipeed/picoclaw) built for the cloud. Agent-only by default (no web UI)—minimal footprint; run on an instance and prompt it to self-build (e.g. add a UI) later.
 
 ## What Makes It Different
 
-| PicoClaw | Claw Cubed |
-|----------|------------|
+| PicoClaw | pico-aws |
+|----------|----------|
 | Local `MEMORY.md` file | **S3 bucket** – cloud-backed memory |
 | AWS MCP optional | **AWS MCP enabled by default** |
 | Single instance | Multi-instance, shared memory |
@@ -15,12 +15,12 @@
 
 1. **Create an S3 bucket** for memory:
    ```bash
-   aws s3 mb s3://your-clawcubed-memory --region us-east-1
+   aws s3 mb s3://your-pico-aws-memory --region us-east-1
    ```
 
 2. **Set your bucket** and credentials:
    ```bash
-   export PICOCLAW_MEMORY_S3_BUCKET=your-clawcubed-memory
+   export PICOCLAW_MEMORY_S3_BUCKET=your-pico-aws-memory
    export AWS_ACCESS_KEY_ID=...
    export AWS_SECRET_ACCESS_KEY=...
    export AWS_REGION=us-east-1
@@ -28,8 +28,8 @@
 
 3. **Build and run**:
    ```bash
-   go build -o clawcubed ./cmd/picoclaw
-   ./clawcubed agent
+   go build -o pico-aws ./cmd/picoclaw
+   ./pico-aws agent
    ```
 
 Memory goes to S3. No local `MEMORY.md`. The agent also has AWS MCP tools (API calls, docs search) enabled by default.

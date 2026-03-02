@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run Claw Cubed in production. Invoke from the repo root (parent of deploy/).
+# Run pico-aws in production. Invoke from the repo root (parent of deploy/).
 # Usage: ./deploy/run.sh [agent|gateway]
 #   agent   – CLI-only agent (default; minimal footprint)
 #   gateway – agent + HTTP API (for channels / future UI)
@@ -14,15 +14,15 @@ if ! command -v go &>/dev/null; then
 fi
 
 # Build once
-if [[ ! -f "$ROOT/clawcubed" ]] || [[ "$ROOT/cmd/picoclaw/main.go" -nt "$ROOT/clawcubed" ]]; then
-  echo "Building clawcubed..."
-  go build -o "$ROOT/clawcubed" ./cmd/picoclaw
+if [[ ! -f "$ROOT/pico-aws" ]] || [[ "$ROOT/cmd/picoclaw/main.go" -nt "$ROOT/pico-aws" ]]; then
+  echo "Building pico-aws..."
+  go build -o "$ROOT/pico-aws" ./cmd/picoclaw
 fi
 
 MODE="${1:-agent}"
 case "$MODE" in
-  agent)   exec "$ROOT/clawcubed" agent ;;
-  gateway) exec "$ROOT/clawcubed" gateway ;;
+  agent)   exec "$ROOT/pico-aws" agent ;;
+  gateway) exec "$ROOT/pico-aws" gateway ;;
   *)
     echo "Usage: $0 [agent|gateway]"
     echo "  agent   – CLI-only (default)"

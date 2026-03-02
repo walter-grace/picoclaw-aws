@@ -5,7 +5,7 @@ package sources
 import (
 	"context"
 
-	"github.com/bigneek/claw-cubed/pkg/devices/events"
+	"github.com/walter-grace/picoclaw-aws/pkg/devices/events"
 )
 
 type USBMonitor struct{}
